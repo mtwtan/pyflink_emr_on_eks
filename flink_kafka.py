@@ -133,8 +133,7 @@ def main():
     ## sink
     
     sink_table_name = "sink_customer"
-    sink_file_path = "s3://flink-228924278364/customer/sink/"
-    #sink_file_path = "file:///home/ec2-user/data/customer/"
+    sink_file_path = "s3://{ S3 Bucket Name }/customer/sink/"
     
     #### create tables
     table_env.execute_sql(
