@@ -43,3 +43,11 @@ kubectl apply -f flink_deploy_kinesis.yaml -n flink
 # For Kafka stream
 kubectl apply -f flink_deploy_kafka.yaml -n flink
 ```
+9. To view the job runs on Flink UI, follow the instructions in step 3 of the [AWS documentation](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/jobruns-flink-kubernetes-operator-run-application.html):
+
+```
+# Using the example of the "python-example" deployment name and "flink" as namespace
+
+kubectl port-forward deployments/python-example 8081 -n flink
+``` 
+On your local browser, go to `http://localhost:8081`.
