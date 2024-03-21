@@ -1,6 +1,6 @@
 {
     "myuuid": "{{random.uuid}}",
-    "event_time":{{date.now("YYYY-MM-DD HH:mm:ss")}},
+    "event_time":"{{date.now("YYYY-MM-DD HH:mm:ss")}}",
     "name": "{{name.firstName}} {{name.lastName}}",
     "address": "{{address.streetAddress}}",
     "city": "{{address.city}}",
